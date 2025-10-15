@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 $title = 'Import Tests';
 require_once __DIR__ . '/../includes/functions.php';
@@ -284,5 +283,4 @@ include __DIR__ . '/../includes/header.php';
     </form>
   </div>
 </div>
->>>>>>> 02c9745d8c63c0f8ae9a929cbf580bbd1494c16a
 <?php include __DIR__ . '/../includes/footer.php'; ?>
