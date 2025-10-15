@@ -1,7 +1,11 @@
+<?php
+$config = require __DIR__ . '/../config/config.php';
+$footer_title = $config['app_name'];
+?>      
       </div>
       <footer class="mt-8 border-t border-slate-200 bg-white">
         <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-slate-500 flex justify-between">
-          <span>&copy; <?= date('Y') ?> The Jewelry Group Test Portal</span>
+          <span>&copy; <?= date('Y') ?> <?= htmlspecialchars($footer_title) ?> </span>
         </div>
       </footer>
     </main>

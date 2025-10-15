@@ -42,7 +42,7 @@ include __DIR__ . '/../includes/header.php';
       <label class="block text-sm text-slate-600 mb-1">Employee</label>
       <select name="employee_id" class="w-full border rounded px-3 py-2">
         <?php foreach ($employees as $emp): ?>
-          <option value="<?= (int)$emp['id'] ?>" <?= $prefillEmp === (int)$emp['id'] ? 'selected' : '' ?>><?= e($emp['name']) ?> (<?= e($emp['email']) ?>)</option>
+          <option value="<?= (int)$emp['id'] ?>" <?= $prefillEmp === (int)$emp['id'] ? 'selected' : '' ?>><?= e($emp['name']) ?> <?= e($emp['email']) ?></option>
         <?php endforeach; ?>
       </select>
     </div>

@@ -2,7 +2,7 @@
 // Global configuration for Interview & Testing Portal
 
 return [
-    'app_name' => 'The Jewelry Group Test Portal',
+    'app_name' => 'Parikh Global Test Portal',
     // Leave empty to auto-detect (recommended). Or set e.g. http://localhost/interview_portal
     'base_url' => '',
 

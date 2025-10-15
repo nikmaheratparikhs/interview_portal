@@ -10,16 +10,22 @@ $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_csrf_or_fail();
 
-    $email = trim((string)post('email'));
+    $identifier = trim((string)post('email')); // can be email or username
     $password = (string)post('password');
 
-    if (!validate_email($email)) {
-        $errors[] = 'Please enter a valid email.';
+    if (!$identifier) {
+        $errors[] = 'Please enter your email or username.';
     }
 
     if (!$errors) {
         $pdo = getPDO();
-        $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE email = ? AND is_active = 1', [$email]);
+
+        if (validate_email($identifier)) {
+            $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE email = ? AND is_active = 1', [$identifier]);
+        } else {
+            $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE name = ? AND is_active = 1', [$identifier]);
+        }
+
         if (!$user || !password_verify($password, $user['password_hash'])) {
             $errors[] = 'Invalid credentials.';
         } else {
@@ -43,9 +49,15 @@ include __DIR__ . '/includes/header.php';
     <form method="post" class="space-y-4">
       <input type="hidden" name="csrf_token" value="<?= e(csrf_token()) ?>">
       <div>
-        <label class="block text-sm text-slate-600 mb-1">Email</label>
-        <input class="w-full border rounded px-3 py-2 focus-ring" type="email" name="email" required />
-      </div>
+      <label class="block text-sm text-slate-600 mb-1">Email or Username</label>
+      <input
+        class="w-full border rounded px-3 py-2 focus-ring"
+        type="text"
+        name="email"
+        placeholder=""
+        required
+      />
+    </div>
       <div>
         <label class="block text-sm text-slate-600 mb-1">Password</label>
         <input class="w-full border rounded px-3 py-2 focus-ring" type="password" name="password" required />

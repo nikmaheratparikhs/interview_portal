@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $role = (string)(post('role') ?? 'employee');
     $interview_date = trim((string)post('interview_date'));
 
-    if ($name === '' || !validate_email($email) || strlen($password) < 6) {
+    if ($name === '' || strlen($password) < 6) {
         $errors[] = 'Provide valid name, email and password (>= 6 chars).';
     }
 
@@ -49,7 +49,7 @@ include __DIR__ . '/../includes/header.php';
     </div>
     <div>
       <label class="block text-sm text-slate-600 mb-1">Email</label>
-      <input type="email" class="w-full border rounded px-3 py-2 focus-ring" name="email" required />
+      <input type="email" class="w-full border rounded px-3 py-2 focus-ring" name="email" />
     </div>
     <div>
       <label class="block text-sm text-slate-600 mb-1">Role</label>
