@@ -104,9 +104,11 @@ include __DIR__ . '/../includes/header.php';
 
 <form method="post" class="space-y-6">
   <input type="hidden" name="csrf_token" value="<?= e(csrf_token()) ?>">
+  <?php $srno = 0; ?>
   <?php foreach ($questions as $q): ?>
+    <?php $srno = ++$srno; ?>
     <div class="bg-white border border-slate-200 rounded p-4">
-      <div class="text-slate-500 text-xs mb-1">Question #<?= (int)$q['id'] ?> • <?= e(ucfirst($q['question_type'])) ?></div>
+      <div class="text-slate-700 text-xs mb-1">Question <?= $srno ?> • <?= e(ucfirst($q['question_type'])) ?></div>
       <div class="font-medium text-slate-800 mb-3"><?= nl2br(e($q['question_text'])) ?></div>
       <?php if ($q['question_type'] === 'text'): ?>
         <textarea class="w-full border rounded px-3 py-2 focus-ring" name="q_<?= (int)$q['id'] ?>" rows="3" placeholder="Type your answer..."></textarea>
