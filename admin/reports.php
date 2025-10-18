@@ -43,6 +43,7 @@ include __DIR__ . '/../includes/header.php';
       <thead>
         <tr class="bg-slate-100 text-slate-600">
           <th class="text-left p-3">Employee</th>
+          <th class="text-left p-3">Mobile</th>
           <th class="text-left p-3">Test</th>
           <th class="text-left p-3">Submitted</th>
           <th class="text-left p-3">Score</th>

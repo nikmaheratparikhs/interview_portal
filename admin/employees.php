@@ -29,6 +29,7 @@ include __DIR__ . '/../includes/header.php';
         <tr class="bg-slate-100 text-slate-600">
           <th class="text-left p-3">Name</th>
           <th class="text-left p-3">Email</th>
+           <th class="text-left p-3">Mobile</th>
           <th class="text-left p-3">Interview date</th>
           <th class="text-left p-3">Completed</th>
           <th class="text-left p-3">Avg Score</th>
@@ -56,6 +57,7 @@ include __DIR__ . '/../includes/header.php';
           <tr class="border-t">
             <td class="p-3 font-medium text-slate-800"><?= e($u['name']) ?></td>
             <td class="p-3"><?= e($u['email']) ?></td>
+            <td class="p-3"><?= e($u['mobile']) ?></td>
             <td class="p-3 text-slate-600"><?= e($u['interview_date']) ?: '—' ?></td>
             <td class="p-3 text-slate-800"><?= (int)($metrics['completed'] ?? 0) ?></td>
             <td class="p-3 text-slate-800"><?= $metrics['avg_percent'] !== null ? ((float)$metrics['avg_percent'] . '%') : '—' ?></td>

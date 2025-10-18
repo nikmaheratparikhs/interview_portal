@@ -28,7 +28,7 @@ if ($action === 'reassign' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $currentEmp = $employeeId ? pdo_fetch_one($pdo, 'SELECT id, name, email FROM users WHERE id = ? AND role = "employee"', [$employeeId]) : null;
 $where = $employeeId ? 'WHERE a.employee_id = ' . (int)$employeeId : '';
-$list = $pdo->query('SELECT a.*, u.name as employee_name, t.title as test_title FROM assignments a JOIN users u ON u.id = a.employee_id JOIN tests t ON t.id = a.test_id ' . $where . ' ORDER BY a.assigned_at DESC')->fetchAll();
+$list = $pdo->query('SELECT a.*, u.name as employee_name,u.mobile ,t.title as test_title FROM assignments a JOIN users u ON u.id = a.employee_id JOIN tests t ON t.id = a.test_id ' . $where . ' ORDER BY a.assigned_at DESC')->fetchAll();
 
 include __DIR__ . '/../includes/header.php';
 ?>
@@ -49,6 +49,7 @@ include __DIR__ . '/../includes/header.php';
       <thead>
         <tr class="bg-slate-100 text-slate-600">
           <th class="text-left p-3">Employee</th>
+          <th class="text-left p-3">Mobile</th>
           <th class="text-left p-3">Test</th>
           <th class="text-left p-3">Assigned</th>
           <th class="text-left p-3">Status</th>
@@ -64,6 +65,7 @@ include __DIR__ . '/../includes/header.php';
         <?php foreach ($list as $a): ?>
           <tr class="border-t">
             <td class="p-3 font-medium text-slate-800"><?= e($a['employee_name']) ?></td>
+            <td class="p-3 font-medium text-slate-800"><?= e($a['mobile']) ?></td>
             <td class="p-3"><?= e($a['test_title']) ?></td>
             <td class="p-3 text-slate-600"><?= e($a['assigned_at']) ?></td>
             <td class="p-3 capitalize"><?= e($a['status']) ?></td>
