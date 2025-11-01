@@ -163,7 +163,8 @@ include __DIR__ . '/../includes/header.php';
       </div>
       <div class="flex items-center gap-3">
         <button class="px-4 py-2 rounded bg-primary-600 text-white" type="submit">Import</button>
-        <a class="text-sm text-primary-700 hover:underline" href="<?= base_url('assets/sample_tests.csv') ?>">Download sample CSV</a>
+        <a class="text-sm text-primary-700 hover:underline" href="<?= base_url('assets/basic_excel.csv') ?>">Download Basic Excel CSV</a>
+        <a class="text-sm text-primary-700 hover:underline" href="<?= base_url('assets/advance_excel.csv') ?>">Download Advance Excel CSV</a>
       </div>
     </form>
   </div>

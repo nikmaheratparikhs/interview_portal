@@ -1,0 +1,41 @@
+test_title,test_description,test_category,test_difficulty,test_time_limit_minutes,question_text,question_type,question_points,choice_1,choice_1_correct,choice_2,choice_2_correct,choice_3,choice_3_correct,choice_4,choice_4_correct
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of following functions MS-Excel have 1 SUM 2 CONCATENATE?,single,1,Only 1,FALSE,Only 2,FALSE,None of 1 and 2,FALSE,Both 1 and 2,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is an example of text in a spreadsheet?,single,1,2763,FALSE,Sales 1994 1995,TRUE,#VALUE!,FALSE,=sum (A1+A2+A3),FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,You can select the current row in MS-Excel Worksheet by pressing?,single,1,Ctrl + Space bar,FALSE,F8 + arrow key,FALSE,Shift + arrow key,FALSE,Shift + Space bar,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Getting data from a cell located in a different worksheet is called?,single,1,Accessing,FALSE,Referencing,TRUE,Updating,FALSE,Functioning,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which ONE of the following is not true?,single,1,You can also create graph in excel sheets,FALSE,Excel sheets have the extension *.doc,TRUE,A new workbook is called Book 1,FALSE,You can have Word and Excel open together,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The programming language in which Excel records the macro code is?,single,1,BASIC,FALSE,Visual Basic,TRUE,Video Basic,FALSE,BASIC2,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The area is entered with in ruler bars and scroll bars called____?,single,1,Spread sheet,FALSE,Sheet,FALSE,Data Sheet,FALSE,Worksheet,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,MS-Excel is a type of?,single,1,Application Software,TRUE,System Software,FALSE,Utility Software,FALSE,System Tools,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The two orientations of worksheet page are called?,single,1,Portrait and Landscape,TRUE,Auto text and Auto correct,FALSE,Front and Footer,FALSE,Header and Footer,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Excel is used for making?,single,1,Application software,FALSE,Spreadsheet,TRUE,System Software,FALSE,None of these,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The address of last cell in MS-Excel is?,single,1,IV 16384,TRUE,ZZ 16384,FALSE,ZX 8192,FALSE,ZZ 8192,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The intersection point of row and column is called?,single,1,Pixel,FALSE,Cell,TRUE,0,FALSE,Track,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,"To add up entries from D6 to D10, we use the formula?",single,1,Add D6.. D10,FALSE,#NAME?,TRUE,Add D6 to D10,FALSE,None of these,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Certain In build functions are available in MS-Excel?,single,1,Yes,TRUE,No,FALSE,None of these,FALSE,Can’t say,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,MS-Excel is a?,single,1,Spreadsheet,TRUE,Graphical Software,FALSE,Windows,FALSE,Workbook,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is not similar to MS-Excel?,single,1,Lotus 123,FALSE,Supercalc,FALSE,DB2,TRUE,VPP3D,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The spreadsheet can be used by?,single,1,Finance Professionals,FALSE,Engineers,FALSE,Stock Brokers,FALSE,All of the above,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is not a valid version of MS-Excel?,single,1,Excel 3.0,FALSE,Excel 5.0,FALSE,Excel 4.5,TRUE,Excel 7.0,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,How many numbers of sheets contain a single spreadsheet?,single,1,100,FALSE,155,FALSE,225,FALSE,255,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is not a valid bar in MS-Excel?,single,1,Paint Bar,TRUE,Formula Bar,FALSE,Title Bar,FALSE,Menu Bar,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Excel uses a _________ to denote a range of cells?,single,1,Semicolon,FALSE,Comma,FALSE,Colon,TRUE,Dot,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Each cell has a _______ address in MS_-Excel?,single,1,Auto,FALSE,Unique,TRUE,Physical,FALSE,None of these,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The data that you have entered in the worksheet can be changed is called?,single,1,Editing,FALSE,Inserting,FALSE,Updating,FALSE,Formatting,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which menu option can be used to delete the spreadsheet in MS-Excel?,single,1,File > delete sheet,FALSE,View > delete sheet,FALSE,Window > delete sheet,FALSE,Edit > delete sheet,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which menu can be used to turn on or turn off the formula and status bar?,single,1,Windows Menu,FALSE,View Menu,TRUE,Edit Menu,FALSE,Date Menu,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The default window contains _______ numbers of bars in MS-Excel?,single,1,Five,FALSE,Six,TRUE,Seven,FALSE,Eight,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The _____ menu is used to short a list on a sheet in MS-Excel?,single,1,View,FALSE,Edit,FALSE,Data,TRUE,Window,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,In MS-Excel you can split a sheet into different size?,single,1,Horizontal,FALSE,Vertically,FALSE,Freeze,FALSE,All of the above,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which short key displays window containing information about active cell in MS-Excel?,single,1,ALT + CTRL + F1,FALSE,CTRL + F2,TRUE,ALT + F2,FALSE,F3,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is valid text operator in MS-Excel?,single,1,< >,FALSE,+,FALSE,X,FALSE,&,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,"Finds minimum value among a range of cell from A4, A5, A6, A7 and A8 in MS-Excel?",single,1,Min (A4 to A8),FALSE,Min (A4 - A8),FALSE,Min (A4 : A8),TRUE,Min (8A : 4A),FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is produce the current date and time in MS-Excel?,single,1,Now (),TRUE,time (),FALSE,Date (),FALSE,Both a and b,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,The last bar of the Excel screen is called?,single,1,Status bar,TRUE,Menu bar,FALSE,Tool bar,FALSE,Both a and b,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is latest version of Excel?,single,1,Excel 2000,FALSE,Excel 2002,FALSE,Excel ME,FALSE,Excel XP,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Excel files have a default extension of?,single,1,XLS,TRUE,XLW,FALSE,WK1,FALSE,123,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is a popular DOS based spreadsheet package?,single,1,Word,FALSE,Smart Cell,FALSE,Excel,FALSE,Lotus 1-2-3,TRUE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Graphics symbol in MS-Excel like?,single,1,Chart,FALSE,Graph,FALSE,Clip art,FALSE,All of the above,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following key can be used to open two worksheet at a time in MS -Excel application?,single,1,ALT + O + 2,FALSE,CTRL + O + 2,FALSE,ALT + W + 2,FALSE,CTRL + W + 2,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Which of the following is not a valid MS-Excel function?,single,1,Statistical,FALSE,Mathematical,FALSE,Financial,FALSE,Calculation,FALSE
+Advance Excel Test,Advance Excel operations,Excel,Intermediate,30,Multiple calculations can be made in a single formula using?,single,1,Standard,FALSE,Array Formula,FALSE,Complex Formula,FALSE,Smart Formula,FALSE
