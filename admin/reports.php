@@ -11,7 +11,7 @@ $kpis = [
   'attempts' => pdo_fetch_one($pdo, 'SELECT COUNT(*) as c FROM attempts')['c'] ?? 0,
 ];
 
-$recent = pdo_fetch_all($pdo, 'SELECT u.name, t.title, at.percent, at.score_decimal, at.total_points, at.submitted_at FROM attempts at JOIN assignments a ON a.id = at.assignment_id JOIN users u ON u.id = a.employee_id JOIN tests t ON t.id = a.test_id WHERE at.submitted_at IS NOT NULL ORDER BY at.submitted_at DESC LIMIT 20');
+$recent = pdo_fetch_all($pdo, 'SELECT u.name,u.mobile, t.title, at.percent, at.score_decimal, at.total_points, at.submitted_at FROM attempts at JOIN assignments a ON a.id = at.assignment_id JOIN users u ON u.id = a.employee_id JOIN tests t ON t.id = a.test_id WHERE at.submitted_at IS NOT NULL ORDER BY at.submitted_at DESC LIMIT 20');
 
 include __DIR__ . '/../includes/header.php';
 ?>
@@ -58,6 +58,7 @@ include __DIR__ . '/../includes/header.php';
         <?php foreach ($recent as $r): ?>
           <tr class="border-t">
             <td class="p-3 font-medium text-slate-800"><?= e($r['name']) ?></td>
+            <td class="p-3 font-medium text-slate-800"><?= e($r['mobile']) ?></td>
             <td class="p-3"><?= e($r['title']) ?></td>
             <td class="p-3 text-slate-600"><?= e($r['submitted_at']) ?></td>
             <td class="p-3">
