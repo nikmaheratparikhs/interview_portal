@@ -20,11 +20,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!$errors) {
         $pdo = getPDO();
 
-        if (validate_email($identifier)) {
-            $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE email = ? AND is_active = 1', [$identifier]);
-        } else {
-            $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE name = ? AND is_active = 1', [$identifier]);
-        }
+          if (validate_email($identifier)) {
+              // Login by email
+              $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE email = ? AND is_active = 1', [$identifier]);
+          } elseif (preg_match('/^[0-9]{6,15}$/', $identifier)) {
+              // Login by mobile (6–15 digits)
+              $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE mobile = ? AND is_active = 1', [$identifier]);
+          } else {
+              // Login by username
+              $user = pdo_fetch_one($pdo, 'SELECT * FROM users WHERE name = ? AND is_active = 1', [$identifier]);
+          }
 
         if (!$user || !password_verify($password, $user['password_hash'])) {
             $errors[] = 'Invalid credentials.';
@@ -49,7 +54,7 @@ include __DIR__ . '/includes/header.php';
     <form method="post" class="space-y-4">
       <input type="hidden" name="csrf_token" value="<?= e(csrf_token()) ?>">
       <div>
-      <label class="block text-sm text-slate-600 mb-1">Email or Username</label>
+      <label class="block text-sm text-slate-600 mb-1">Email, Username or Mobile</label>
       <input
         class="w-full border rounded px-3 py-2 focus-ring"
         type="text"
